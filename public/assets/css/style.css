@@ -1,3 +1,48 @@
 body {
     background-color: black;
 }
+
+#aboutMe {
+    padding-top: 2%;
+    color: #E34234;
+}
+
+#profPicContainer {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    width: 400px;
+    height: 100%;
+}
+
+#profPic {
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(7px 7px 3px whitesmoke);
+}
+
+#description {
+    font-family: 'Open Sans', sans-serif;
+    font-size: xx-large;
+    font-weight: 600;
+    color: #c9b1a6;
+    text-align: justify;
+}
+
+#projectsLink:hover {
+    color: #E34234;
+}
+
+#projectsLink {
+    text-decoration: none;
+    color: #c9b1a6;
+}
+
+#resumeLink:hover {
+    color: #E34234;
+}
+
+#resumeLink {
+    text-decoration: none;
+    color: #c9b1a6;
+}
