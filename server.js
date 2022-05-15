@@ -1,5 +1,6 @@
 const express = require('express');
-const routes = require('./routes');
+const path = require('path');
+// const routes = require('./routes');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -9,7 +10,15 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(express.static('public'));
 
-app.use(routes);
+// app.use(routes);
+
+app.use('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '/public/index.html'))
+});
+
+app.use('/projects', (req, res) => {
+    res.sendFile(path.join(__dirname, '/public/projects.html'))
+});
 
 app.listen(PORT, () => {
   console.log(`App listening on port ${PORT}!`);
