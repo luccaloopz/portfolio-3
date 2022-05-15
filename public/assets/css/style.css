@@ -46,3 +46,20 @@ body {
     text-decoration: none;
     color: #c9b1a6;
 }
+
+.picCaption {
+    color: black;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: x-large;
+    text-decoration: none;
+}
+
+.picCaption:hover {
+    color: #E34234;
+}
+
+.projectIMG {
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
